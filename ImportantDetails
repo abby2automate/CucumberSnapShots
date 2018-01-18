@@ -1,0 +1,16 @@
+1. Running Cucumber Tests Using TestNG
+		Step 1: Add the Dependencies :: org.testng/testng/6.9.10 -- info.cukes/cucumber-testng/1.2.5
+		Step 2: Remove @RunWith 
+		Step 3: Add extends AbstractTestNGCucumberTests to the Class Running thet test
+		Step 4: Run as TestNG Test
+	  
+2. Adding Extent Reports 
+		Step 1 : Add the Dependencies : com.vimalselvam/cucumber-extentsreport/3.0.2 -- com.aventstack/extentreports/3.1.1
+		Step 2 : Add the Plugin - "com.cucumber.listener.ExtentCucumberFormatter:D:/AutoFrmWrk/CucumberSnapShots/Reports/ExtentExtent_Report.html"
+		Step 3 : In JUnit @AfterClass() Add the Script to load the ExtentReports Configuration
+		Step 4 : Hooks:-After() add the code for scenario.isFailed to attach Screen Shot
+
+3. Running from Jenkins 
+		Step 1 : Add the Plugin : maven-compiler-plugin and maven-surefire-plugin to run the Tests from Maven
+					<exclude>**/CLassToBeRun.java</exclude>
+		Step 2 : To Run from local Machine Place the Project folder in C:\Users\name\.jenkins

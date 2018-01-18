@@ -1,0 +1,17 @@
+Feature: First Script and DocString
+
+  @WithExtentReport
+  Scenario: DocString                   [90m# src/test/resources/Scenario_DocString.feature:14[0m
+    [32mGiven [0m[32mLoad Make my Trip Page[0m        [90m# Scenario_DocString.load_Make_my_Trip_Page()[0m
+    [31mAnd [0m[31mCheck the Following Dock String[0m [90m# Scenario_DocString.check_the_Following_Dock_String(String)[0m
+      """
+      The leading player in online flight bookings in India, MakeMyTrip offers great offers, some of the lowest airfares, exclusive discounts and a seamless online booking experience. Flight, hotel and holiday bookings through the desktop or mobile site is a delightfully customer friendly experience, and with just a few clicks you can complete your booking. With features like Instant Discounts, Fare Calendar, MyRewards Program, MyWallet and many more, the overall booking experience with MakeMyTrip constantly adds value to its product and continues to offer the best to its customers.
+
+      """
+      [31mjunit.framework.AssertionFailedError
+      	at junit.framework.Assert.fail(Assert.java:55)
+      	at junit.framework.Assert.assertTrue(Assert.java:22)
+      	at junit.framework.Assert.assertTrue(Assert.java:31)
+      	at com.test.stepdefinition.Scenario_DocString.check_the_Following_Dock_String(Scenario_DocString.java:90)
+      	at ✽.And Check the Following Dock String(src/test/resources/Scenario_DocString.feature:16)
+      [0m
